@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--react核心库-->
+    <script src="./lib/react.production.min.js" crossorigin></script>
+    <!--react扩展库：提供dom操作-->
+    <script src="./lib/react-dom.production.min.js" crossorigin></script>
+    <!--这里的babel主要用来解析JSX语法-->
+    <script src="./lib/babel.min.js"></script>
+    <!--主要用来进行类型检查-->
+    <script src="./lib/prop-types.js"></script>
+</head>
+<body>
+
+<!-- 定义一个div，react将要渲染这个div -->
+<div id="root"></div>
+
+<script>
+    var HelloComponent = React.createClass({
+        render: function() {
+            return React.createElement('h1', null, 'Hello World');
+        }
+    });
+
+    ReactDOM.render(
+        React.createElement(HelloComponent, null),
+        document.getElementById('root')
+    )
+</script>
+</body>
+</html>
