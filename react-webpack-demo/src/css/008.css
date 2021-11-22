@@ -1,0 +1,12 @@
+.title {
+    color: red;
+}
+
+#cmtTitle {
+    font-size: 14px;
+}
+
+/* 
+    :local() 包括起来的类名，是模块化的类名，同时默认 :local 可以不写
+    :global() 包裹的类名，是全局生效的，不会被 css-modules 控制
+*/

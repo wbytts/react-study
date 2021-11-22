@@ -1,0 +1,27 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+// import './001-基本用法.js'
+// import './002-基本JSX语法.js'
+// import './003-JSX的语法细节.js'
+// import './004-函数式组件.js'
+// import './006-class方式创建组件.js'
+// import './007-this-state'
+// import './008-demo~评论列表组件.js'
+// import './009-点击事件.js'
+// import './010-setState.js'
+// import './011-state和事件函数的简写方式.js'
+// import './012-props'
+// import './013-props传递类型的限制'
+// import './014-refs.js'
+// import './015-回调函数形式的ref.js'
+// import './016-回调ref的回调执行次数'
+// import './017-createRef'
+// import './018-生命周期（旧）'
+// import './019-生命周期（新）'
+// import './020-DOM的diff算法'
+// import './021-key的作用'
+// import './demo.js'
+// import './手动保存数据.js'
+import './setState接收一个函数.js'
