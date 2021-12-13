@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 class SetState extends React.Component {
     constructor() {
         super() // 关于 this 的操作需要放在 super 的后面，其他的可以放在前面的
+
+        // 初始化 state
         this.state = {
             msg: 'Hello'
         }
