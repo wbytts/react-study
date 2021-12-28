@@ -24,7 +24,7 @@ class SimpleState extends React.Component {
         // setState的另一种写法
         /*
           setState(updater, [callback])
-            updater为返回stateChange对象的函数
+            updater为返回stateChange对象的函数，可以接收到state和props
             updater可以接收到state和props
             callback是可选的回调函数，它在状态更新、界面也更新后才被调用
         */

@@ -3,7 +3,7 @@ module.exports = {
     printWidth: 300,
 
     // tab键宽度，默认2
-    tabWidth: 4,
+    tabWidth: 2,
 
     // 是否使用tab键缩进，默认false
     useTabs: false,
