@@ -3,31 +3,31 @@ import ReactDOM from 'react-dom';
 
 class Demo extends React.Component {
 
-    handleClick = () => {
-        console.log('提示数据', this.input1.value)
-    }
+  handleClick = () => {
+    console.log('提示数据', this.input1.value);
+  };
 
-    render() {
-        return (
-            <div>
-                <input ref={c=>{this.input1 = c; console.log(c)}} type="text"/>
-                <button onClick={this.handleClick}>点我提示输入的数据</button>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <input ref={c => { this.input1 = c; console.log(c); }} type="text" />
+        <button onClick={this.handleClick}>点我提示输入的数据</button>
+      </div>
+    );
+  }
 }
 
 
-let title = <h1>你好啊</h1>
-let hArr = []
+let title = <h1>你好啊</h1>;
+let hArr = [];
 
-for(let i=0; i<100; i++) {
-    hArr.push(title)
+for (let i = 0; i < 100; i++) {
+  hArr.push(title);
 }
 
 let box = <div>
-    {hArr}
-</div>
+  {hArr}
+</div>;
 
 
 /*
@@ -39,9 +39,9 @@ let box = <div>
 */
 
 const mydiv = (
-    <div>
-        <Demo />
-    </div>
-)
+  <div>
+    <Demo />
+  </div>
+);
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

@@ -1,10 +1,8 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-
-ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
-);
+// 获取要挂载的元素
+let root = document.getElementById('root');
+// 将 App 组件渲染到这个元素上
+ReactDOM.render(<App />, root);
 

@@ -10,29 +10,27 @@
   </head>
 
   <body>
-
     <div id="root"></div>
 
 
     <script type="text/babel">
-      let root = document.getElementById('root');
 
       function Demo() {
         return (
           <div>
-            <h1>Hello World</h1>
+            <span>Hello World 123</span>
           </div>
         )
       }
 
 
-      let app = (
+      let vDom = (
         <div>
           <Demo></Demo>
         </div>
-      )
+      );
 
-      ReactDOM.render(app, root);
+      ReactDOM.render(vDom, document.getElementById('root'));
     </script>
 
   </body>

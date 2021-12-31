@@ -15,9 +15,9 @@ class SimpleState extends React.Component {
         </div>
     }
 
+    // ES7的属性初始化写法，实际上也是使用了箭头函数
     // 使用箭头函数简化事件函数，并且解决this的问题
     handleClick = () => {
-
         // 简写形式 setState(obj, [callback])
         // this.setState({msg: 'World'})
 

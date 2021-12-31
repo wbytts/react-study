@@ -1,3 +1,9 @@
+/*
+一个react练习环境的webpack配置
+src
+  index.html
+  index.js
+*/
 const path = require('path');
 
 // 处理HTML资源：npm install html-webpack-plugin -D
@@ -38,7 +44,8 @@ module.exports = {
                     local：样式的类名定义名称
                     hash：32位的哈希值
                 */
-                localIdentName: '[path]-[name]-[local]-[hash:5]'
+                // localIdentName: '[path]-[name]-[local]-[hash:5]'
+                localIdentName: '[local]-[hash:32]'
               }
             }
           }
