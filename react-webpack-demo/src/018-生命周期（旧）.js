@@ -73,10 +73,8 @@ class Demo extends React.Component {
 
   // 父组件 render 时，子组件会执行这个钩子（第一次不算！）
   componentWillReceiveProps() {
-    console.log('componentWillReceiveProps, 组件将要接收props');
   }
 
-  // setState 触发
   shouldComponentUpdate() {  // 默认提供为空，返回 true
     console.log('shouldComponentUpdate, 组件是否应该更新');
     return true;

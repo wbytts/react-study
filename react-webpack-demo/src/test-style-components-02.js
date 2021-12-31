@@ -30,7 +30,6 @@ const mydiv = (
   </StyledWrapper>
 );
 
-export default 
 
 
 ReactDOM.render(mydiv, document.querySelector('#app'));
