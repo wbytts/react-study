@@ -11,7 +11,7 @@ class Demo extends Component {
         console.log(`保存数据: ${name} = ${data}`);
         this.setState({name: data})
     }
-    
+
     show = () => {
         console.log(this.data.msg);
     }
@@ -23,7 +23,7 @@ class Demo extends Component {
         </div>;
     }
 }
- 
+
 const mydiv = (
     <div>
         <Demo />

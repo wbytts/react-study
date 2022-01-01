@@ -98,10 +98,10 @@ module.exports = {
     // 进度条
     progress: true,
     // 服务端口
-    port: 3000,
+    port: 8181,
     // 是否自动打开浏览器
     open: 'msedge',
     // 是否开启模块热切换，module上会挂一个 hot: true 的属性
-    //hot: true,
+    hot: true,
   }
 };
