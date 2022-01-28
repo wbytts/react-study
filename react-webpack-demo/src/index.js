@@ -27,7 +27,8 @@ import ReactDOM from 'react-dom';
 // import './setState接收一个函数.js'
 // import './hook-001-useState';
 // import './hook-002-切换'
-import './hook-003-输入变化'
+// import './hook-003-输入变化'
+import './hook-004-useEffect'
 // import './test-style-components-001.js'
 // import './test-style-components-002.js'
 // import './test-style-components-003.js'
