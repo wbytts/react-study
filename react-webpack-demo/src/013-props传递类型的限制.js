@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
 class Person extends React.Component {
-
+  // 限制prop
   static propTypes = {
     name: PropTypes.string,
     age: PropTypes.number,
+  };
+
+  // 默认prop
+  static defaultProps = {
+    name: '默认值',
   };
 
   render() {
@@ -21,8 +26,7 @@ class Person extends React.Component {
 }
 
 /*
-React15版本的时候，React.PropTypes 还在维护
-React16的时候，这个就弃用了
+React15版本的时候，React.PropTypes 还在维护，React16的时候，这个弃用了
 */
 // Person.propTypes = {
 //   name: PropTypes.string,
