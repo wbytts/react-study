@@ -21,7 +21,6 @@ const App = props => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
-
   return (
     <div>
 

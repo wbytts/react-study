@@ -10,6 +10,7 @@
     "dev": "npx webpack serve"
   },
   "dependencies": {
+    "ahooks": "^3.1.9",
     "axios": "^0.25.0",
     "bootstrap": "^3.4.1",
     "dayjs": "^1.10.7",
