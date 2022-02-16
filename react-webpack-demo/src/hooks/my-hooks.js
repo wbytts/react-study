@@ -1,10 +1,10 @@
 ﻿import React, { useState, useEffect, useCallback } from 'react';
 // 将 ahooks 的hook通过AHK导出（npm install ahooks --save）
-export import * as AHK from 'ahooks';
+import * as AHK from 'ahooks';
 
 /**
  * 布尔值Hook，可以控制真、假、或者切换
- * @param {} initVal
+ * @param {*} initVal
  * @returns
  */
 export function useBoolean(initVal = false) {
@@ -17,6 +17,7 @@ export function useBoolean(initVal = false) {
 
 /**
  * 类似useBoolean，不过在名字上是显示和隐藏的意思
+ * 常用语控制对话框的显示隐藏
  * @param {*} initVal
  * @returns
  */

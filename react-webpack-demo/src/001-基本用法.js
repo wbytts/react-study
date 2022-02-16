@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 // 参数2：是一个对象或者null，表示当前这个DOM元素的属性
 // 参数3：子节点
 // 参数n：其他子节点
-const myh1 = React.createElement('h1', { id: 'head', title: '标题' }, '这是一个h1');
+const myh1 = React.createElement('h1', {id: 'head', title: '标题'}, '这是一个h1');
 
 // 再套一个div
 const mydiv = React.createElement('div', null, '这是一个div元素', myh1);

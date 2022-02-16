@@ -14,7 +14,7 @@ const TomatoButton = styled(Button)`
 `;
 
 
-// 注意：不要把styled写在render里面或者函数式组件里面！会很慢！
+// 注意：不要把styled写在render里面或者函数式组件里面！速度会很慢！
 
 const App = () => (
   <div>

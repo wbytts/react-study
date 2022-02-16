@@ -1,11 +1,11 @@
-﻿import React, { useState } from 'react';
+﻿import React, { useState, useCallback } from 'react';
 import ReactDOM, { createPortal } from 'react-dom';
 import styled from 'styled-components';
 
 function useInputValue(defaultValue = '') {
-  const [value, setValue] = React.useState(defaultValue);
-  const change = React.useCallback(event => setValue(event.target.value), []);
-  const clear = React.useCallback(event => setValue(''), []);
+  const [value, setValue] = useState(defaultValue);
+  const change = useCallback(event => setValue(event.target.value), []);
+  const clear = useCallback(event => setValue(''), []);
   return { value, change, clear };
 }
 
