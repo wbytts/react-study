@@ -14,6 +14,7 @@
     "axios": "^0.25.0",
     "bootstrap": "^3.4.1",
     "dayjs": "^1.10.7",
+    "flooks": "^5.1.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "prop-types": "^15.8.0",
@@ -24,7 +25,8 @@
     "redux": "^4.1.2",
     "styled-components": "^5.3.3",
     "unstated": "^2.1.1",
-    "unstated-next": "^1.1.0"
+    "unstated-next": "^1.1.0",
+    "zustand": "^3.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
