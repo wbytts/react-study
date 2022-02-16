@@ -1,14 +1,13 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
-import styled, {css} from 'styled-components';
-
+import styled, { css } from 'styled-components';
 
 function Demo() {
   return (
     <div>
       <span>hello world</span>
     </div>
-  )
+  );
 }
 
 const StyledWrapper = styled.div`
@@ -23,13 +22,10 @@ const StyledWrapper = styled.div`
   }
 `;
 
-
 const mydiv = (
   <StyledWrapper>
     <Demo></Demo>
   </StyledWrapper>
 );
-
-
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

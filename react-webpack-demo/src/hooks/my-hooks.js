@@ -1,6 +1,6 @@
 ﻿import React, { useState, useEffect, useCallback } from 'react';
 // 将 ahooks 的hook通过AHK导出（npm install ahooks --save）
-export import * as AHK from 'ahooks';
+import * as AHK from 'ahooks';
 
 /**
  * 布尔值Hook，可以控制真、假、或者切换
