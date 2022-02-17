@@ -42,29 +42,29 @@ var aDiv = <div>这是一个块</div>
 
 // 特点：自由
 const mydiv = <div>
-    <h1>{a * 3}</h1>
-    <hr />
-    {str}
-    <hr />
-    {flag ? '条件为真' : '条件为假'}
-    <hr />
-    <p title={title}>这是一个p标签</p>
-    <hr />
-    {/* 可以直接嵌入另一个JSX元素 */}
-    {h1}
-    <hr />
-    {/* 可以直接展示一个数组，数组中的元素甚至可以使JSX */}
-    {arr}
-    <hr />
-    {strs}
-    {/* JSX中的注释写法 */}
-    {
-        // JSX中的单行注释写法，注意大括号的位置
-    }
-    {strs.map(e => <h2 key={e}>{e + '~~~'}</h2>)}
-    <hr />
-    {/* class 属性要用 className 代替 */}
-    {/* for 属性要用 htmlFor 代替 */}
+  <h1>{a * 3}</h1>
+  <hr/>
+  {str}
+  <hr/>
+  {flag ? '条件为真' : '条件为假'}
+  <hr/>
+  <p title={title}>这是一个p标签</p>
+  <hr/>
+  {/* 可以直接嵌入另一个JSX元素 */}
+  {h1}
+  <hr/>
+  {/* 可以直接展示一个数组，数组中的元素甚至可以使JSX */}
+  {arr}
+  <hr/>
+  {strs}
+  {/* JSX中的注释写法 */}
+  {
+    // JSX中的单行注释写法，注意大括号的位置
+  }
+  {strs.map(e => <h2 key={e}>{e + '~~~'}</h2>)}
+  <hr/>
+  {/* class 属性要用 className 代替 */}
+  {/* for 属性要用 htmlFor 代替 */}
 </div>;
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

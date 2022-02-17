@@ -16,9 +16,8 @@ import ReactDOM from 'react-dom';
           }
 */
 const mydiv = <div>
-                <h1 id="head" title="标题">我是一个h1</h1>
-              </div>;
-
+  <h1 id="head" title="标题">我是一个h1</h1>
+</div>;
 
 
 ReactDOM.render(mydiv, document.querySelector('#app'));
