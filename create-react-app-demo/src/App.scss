@@ -1,0 +1,10 @@
+﻿// @use 'styles/_colors.scss'; // assuming a styles directory under src/
+// @use '~nprogress/nprogress'; // loading a css file from the nprogress node module
+// 注意：如上所示，要从 node_modules 目录下引入文件，需要在文件路径前加上 ~ 符号。
+// sass 也支持 SASS_PATH 变量
+
+.App {
+  .msg {
+    color: red;
+  }
+}
