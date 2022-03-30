@@ -20,5 +20,5 @@ const mydiv = React.createElement('div', null, '这是一个div元素', myh1);
 
 // 将虚拟DOM渲染到页面上
 // 参数1：虚拟DOM对象
-// 参数2：页面上的DOM元素
+// 参数2：页面上的DOM元素对象
 ReactDOM.render(mydiv, document.querySelector('#app'));

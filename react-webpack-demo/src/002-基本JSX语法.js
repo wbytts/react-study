@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // 使用 JSX 语法（需要使用 babel）
-// JSX语法的本质，在运行的时候，还是被转换成了 React.createElement的形式来执行的
+// JSX语法的本质：在运行的时候，被转换成了 React.createElement的形式来执行的
 /*
     npm install babel-core babel-loader@7 babel-plugin-transform-runtime -D
     npm install babel-preset-env babel-preset-stage-0 -D
@@ -15,9 +15,7 @@ import ReactDOM from 'react-dom';
               "plugins": ["transform-runtime"]
           }
 */
-const mydiv = <div>
-  <h1 id="head" title="标题">我是一个h1</h1>
-</div>;
+const mydiv = <div><h1 id="head" title="标题">我是一个h1</h1></div>;
 
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

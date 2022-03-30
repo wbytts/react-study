@@ -30,7 +30,7 @@ const p = {
 
 const mydiv = <div>
     <Hello name="wby"/>
-    {/* 使用扩展运算符，展开属性 */}
+    {/* 展开对象属性的写法 */}
     <Hello {...p}/>
 </div>
 

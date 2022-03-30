@@ -16,6 +16,8 @@ class Hello extends React.Component {
       </div>
     );
   }
+
+  // 组件类的构造方法
   constructor(props) { // 接收 props
     // 由于继承了 React.Component，所以要调用 super
     // 只有调用了 super() 后，才能使用 this 关键字
