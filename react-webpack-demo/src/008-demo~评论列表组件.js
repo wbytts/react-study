@@ -18,16 +18,20 @@ function CmtItem(props) {
     border: '1px dashed #ccc',
     margin: '10px',
     padding: '10px',
-    boxShadow: '0 0 10px #ccc'
+    boxShadow: '0 0 10px #ccc',
   };
   const contentStyle = {
-    fontSize: '12px'
+    fontSize: '12px',
   };
-  return <div key={props.id} style={itemStyle}>
-    {/* CSS模块化，只能应用于 类名选择器 和 id选择器 */}
-    <h1 className={cssobj.title} id={cssobj.cmtTitle}>评论人: {props.user}</h1>
-    <p style={contentStyle}>评论内容: {props.content}</p>
-  </div>;
+  return (
+    <div key={props.id} style={itemStyle}>
+      {/* CSS模块化，只能应用于 类名选择器 和 id选择器 */}
+      <h1 className={cssobj.title} id={cssobj.cmtTitle}>
+        评论人: {props.user}
+      </h1>
+      <p style={contentStyle}>评论内容: {props.content}</p>
+    </div>
+  );
 }
 
 // 评论列表组件
@@ -41,24 +45,28 @@ class CmtList extends React.Component {
         { id: 3, user: '王五', content: '哈哈，凉席' },
         { id: 4, user: '赵六', content: '哈哈，枕头' },
         { id: 5, user: '田七', content: '哈哈，砖头' },
-      ]
+      ],
     };
   }
   render() {
-    return <div>
-      <h1 style={{ textAlign: 'center' }}>这是评论列表组件</h1>
-      <button
-        className={[bootcss.btn, bootcss['btn-primary']].join(' ')}
-        style={{ marginLeft: '10px' }}
-      >一个按钮
-      </button>
-      {this.state.CommentList.map(item => <CmtItem {...item} key={item.id} />)}
-    </div>;
+    return (
+      <div>
+        <h1 style={{ textAlign: 'center' }}>这是评论列表组件</h1>
+        <button className={[bootcss.btn, bootcss['btn-primary']].join(' ')} style={{ marginLeft: '10px' }}>
+          一个按钮
+        </button>
+        {this.state.CommentList.map(item => (
+          <CmtItem {...item} key={item.id} />
+        ))}
+      </div>
+    );
   }
 }
 
-const mydiv = <div>
-  <CmtList />
-</div>;
+const mydiv = (
+  <div>
+    <CmtList />
+  </div>
+);
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

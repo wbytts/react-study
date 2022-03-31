@@ -21,7 +21,6 @@ const App = props => {
   );
 };
 
-
 const mydiv = (
   <div>
     <App />

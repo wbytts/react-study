@@ -1,14 +1,13 @@
-﻿import React, {useState, useCallback} from 'react';
-import ReactDOM, {createPortal} from 'react-dom';
+﻿import React, { useState, useCallback } from 'react';
+import ReactDOM, { createPortal } from 'react-dom';
 import styled from 'styled-components';
 
 function useVisible(initVal = false) {
   const [visible, setVisible] = useState(initVal);
   const show = useCallback(() => setVisible(true), [setVisible]);
   const hide = useCallback(() => setVisible(false), [setVisible]);
-  return {visible, show, hide};
+  return { visible, show, hide };
 }
-
 
 const ScWrapper = styled.div`
   div {
@@ -25,7 +24,7 @@ const App = props => {
     <ScWrapper>
       <button onClick={boxVisible.show}>显示</button>
       <button onClick={boxVisible.hide}>隐藏</button>
-      <br/>
+      <br />
       {boxVisible.visible && <div></div>}
     </ScWrapper>
   );
@@ -33,7 +32,7 @@ const App = props => {
 
 const mydiv = (
   <div>
-    <App/>
+    <App />
   </div>
 );
 
