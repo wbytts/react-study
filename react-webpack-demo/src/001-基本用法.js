@@ -22,3 +22,9 @@ const mydiv = React.createElement('div', null, '这是一个div元素', myh1);
 // 参数1：虚拟DOM对象
 // 参数2：页面上的DOM元素对象
 ReactDOM.render(mydiv, document.querySelector('#app'));
+
+
+
+
+
+
