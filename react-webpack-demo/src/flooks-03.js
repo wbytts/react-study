@@ -1,7 +1,6 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
-import use$counter from './flooks/counter'
-
+import use$counter from './flooks/counter';
 
 function Counter() {
   const { count, add, addAsync } = use$counter();
@@ -20,7 +19,9 @@ function Counter2() {
 
   return (
     <div>
-      <p>{count} --- {x}</p>
+      <p>
+        {count} --- {x}
+      </p>
       <button onClick={add}>+</button>
       <button onClick={addAsync}>+~ {addAsync.loading && '...'}</button>
     </div>

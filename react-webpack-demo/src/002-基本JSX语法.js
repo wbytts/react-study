@@ -15,7 +15,12 @@ import ReactDOM from 'react-dom';
               "plugins": ["transform-runtime"]
           }
 */
-const mydiv = <div><h1 id="head" title="标题">我是一个h1</h1></div>;
-
+const mydiv = (
+  <div>
+    <h1 id="head" title="标题">
+      我是一个h1
+    </h1>
+  </div>
+);
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

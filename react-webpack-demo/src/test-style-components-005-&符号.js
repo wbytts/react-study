@@ -37,5 +37,5 @@ ReactDOM.render(
       <Thing>Splendid.</Thing>
     </div>
   </React.Fragment>,
-  document.querySelector('#app')
+  document.querySelector('#app'),
 );

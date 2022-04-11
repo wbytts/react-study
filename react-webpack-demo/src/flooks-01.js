@@ -14,7 +14,7 @@ const useCounter = create(({ get, set }) => ({
   },
   // 异步的方法
   async addAsync() {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
     const { add } = get(); // 获取自身 store
 
     // 彼此互通的 store - 调用 get(useOutStore) 获取其他 store，所有 store 均可互通。

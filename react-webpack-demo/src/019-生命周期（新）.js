@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class Demo extends React.Component {
-
   state = {
-    count: 0
+    count: 0,
   };
 
   add = () => {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 1,
     });
   };
 

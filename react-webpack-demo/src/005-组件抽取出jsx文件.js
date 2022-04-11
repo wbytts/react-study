@@ -5,15 +5,17 @@ import ReactDOM from 'react-dom';
 import Hello from '@/components/Hello.jsx';
 
 const p = {
-    name: 'zhangsan',
-    age: 18,
-    gender: '男'
-}
+  name: 'zhangsan',
+  age: 18,
+  gender: '男',
+};
 
-const mydiv = <div>
-    <Hello name="wby"/>
+const mydiv = (
+  <div>
+    <Hello name="wby" />
     {/* 使用扩展运算符，展开属性 */}
-    <Hello {...p}/>
-</div>
+    <Hello {...p} />
+  </div>
+);
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

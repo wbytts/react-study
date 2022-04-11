@@ -7,11 +7,7 @@ import styled from 'styled-components';
 */
 
 const App = props => {
-  return (
-    <div>
-
-    </div>
-  );
+  return <div></div>;
 };
 
 const mydiv = (

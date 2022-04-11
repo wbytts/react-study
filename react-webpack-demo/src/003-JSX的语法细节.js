@@ -10,7 +10,6 @@ import ReactDOM from 'react-dom';
     npm install babel-preset-env babel-preset-stage-0 -D
 */
 
-
 /*
     JSX语法规则：
         1. 定义虚拟DOM时，不要写引号
@@ -25,9 +24,9 @@ import ReactDOM from 'react-dom';
  */
 
 const a = 10;
-const str = "你好，中国";
+const str = '你好，中国';
 const flag = false;
-let title = "999";
+let title = '999';
 const h1 = <h1>红红火火恍恍惚惚</h1>;
 
 const arr = [<h2 key="1">111</h2>, <h2 key="2">222</h2>];
@@ -36,35 +35,37 @@ const strs = ['aaa', 'bbb', 'ccc'];
 
 // 当需要在JSX内，写一些JS表达式，就可以使用 {...}
 
-
-var aDiv = <div>这是一个块</div>
-
+var aDiv = <div>这是一个块</div>;
 
 // 特点：自由
-const mydiv = <div>
-  <h1>{a * 3}</h1>
-  <hr/>
-  {str}
-  <hr/>
-  {flag ? '条件为真' : '条件为假'}
-  <hr/>
-  <p title={title}>这是一个p标签</p>
-  <hr/>
-  {/* 可以直接嵌入另一个JSX元素 */}
-  {h1}
-  <hr/>
-  {/* 可以直接展示一个数组，数组中的元素甚至可以使JSX */}
-  {arr}
-  <hr/>
-  {strs}
-  {/* JSX中的注释写法 */}
-  {
-    // JSX中的单行注释写法，注意大括号的位置
-  }
-  {strs.map(e => <h2 key={e}>{e + '~~~'}</h2>)}
-  <hr/>
-  {/* class 属性要用 className 代替 */}
-  {/* for 属性要用 htmlFor 代替 */}
-</div>;
+const mydiv = (
+  <div>
+    <h1>{a * 3}</h1>
+    <hr />
+    {str}
+    <hr />
+    {flag ? '条件为真' : '条件为假'}
+    <hr />
+    <p title={title}>这是一个p标签</p>
+    <hr />
+    {/* 可以直接嵌入另一个JSX元素 */}
+    {h1}
+    <hr />
+    {/* 可以直接展示一个数组，数组中的元素甚至可以使JSX */}
+    {arr}
+    <hr />
+    {strs}
+    {/* JSX中的注释写法 */}
+    {
+      // JSX中的单行注释写法，注意大括号的位置
+    }
+    {strs.map(e => (
+      <h2 key={e}>{e + '~~~'}</h2>
+    ))}
+    <hr />
+    {/* class 属性要用 className 代替 */}
+    {/* for 属性要用 htmlFor 代替 */}
+  </div>
+);
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

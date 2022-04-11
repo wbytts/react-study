@@ -34,5 +34,5 @@ render(
   <Provider>
     <Counter />
   </Provider>,
-  document.querySelector('#app')
+  document.querySelector('#app'),
 );

@@ -27,7 +27,7 @@ class BindEvent extends React.Component {
   }
 
   // 使用箭头函数解决 this的问题
-  print = (msg) => {
+  print = msg => {
     console.log(msg, this);
   };
 }

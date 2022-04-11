@@ -11,20 +11,23 @@ class Hello extends React.Component {
     // 或者通过解构赋值来拿到属性值
     return (
       <div>
-        <h1>你好啊: {this.props.name} -- {this.props.age}</h1>
+        <h1>
+          你好啊: {this.props.name} -- {this.props.age}
+        </h1>
         <h2>{this.state.msg}</h2>
       </div>
     );
   }
 
   // 组件类的构造方法
-  constructor(props) { // 接收 props
+  constructor(props) {
+    // 接收 props
     // 由于继承了 React.Component，所以要调用 super
     // 只有调用了 super() 后，才能使用 this 关键字
     super(props);
     // 相当于 vue 中的 data
     this.state = {
-      msg: '大家好，这里是 this.state.msg 的信息'
+      msg: '大家好，这里是 this.state.msg 的信息',
     };
   }
 }

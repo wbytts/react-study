@@ -14,11 +14,7 @@ useMemo 接收一个函数和依赖数组，当数组中依赖项变化的时候
 */
 
 const App = props => {
-  return (
-    <div>
-
-    </div>
-  );
+  return <div></div>;
 };
 
 const mydiv = (

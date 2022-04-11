@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
 class Demo extends React.Component {
-
   state = {
-    count: 0
+    count: 0,
   };
 
   add = () => {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 1,
     });
   };
 
@@ -72,10 +70,10 @@ class Demo extends React.Component {
   }
 
   // 父组件 render 时，子组件会执行这个钩子（第一次不算！）
-  componentWillReceiveProps() {
-  }
+  componentWillReceiveProps() {}
 
-  shouldComponentUpdate() {  // 默认提供为空，返回 true
+  shouldComponentUpdate() {
+    // 默认提供为空，返回 true
     console.log('shouldComponentUpdate, 组件是否应该更新');
     return true;
   }

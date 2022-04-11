@@ -17,21 +17,23 @@ import ReactDOM from 'react-dom';
 
 // 函数式组件，组件名称需要使用或者首字母大写
 function Hello(props) {
-    console.log(props);
-    // 注意：props 的属性是只读的，不能修改
-    return <div>你好 {props.name}</div>
+  console.log(props);
+  // 注意：props 的属性是只读的，不能修改
+  return <div>你好 {props.name}</div>;
 }
 
 const p = {
-    name: 'zhangsan',
-    age: 18,
-    gender: '男'
-}
+  name: 'zhangsan',
+  age: 18,
+  gender: '男',
+};
 
-const mydiv = <div>
-    <Hello name="wby"/>
+const mydiv = (
+  <div>
+    <Hello name="wby" />
     {/* 展开对象属性的写法 */}
-    <Hello {...p}/>
-</div>
+    <Hello {...p} />
+  </div>
+);
 
 ReactDOM.render(mydiv, document.querySelector('#app'));

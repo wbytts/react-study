@@ -2,11 +2,7 @@
 import ReactDOM from 'react-dom';
 import styled, { css } from 'styled-components';
 
-const Link = ({ className, children }) => (
-  <a className={className}>
-    {children}
-  </a>
-);
+const Link = ({ className, children }) => <a className={className}>{children}</a>;
 
 const StyledLink = styled(Link)`
   color: palevioletred;

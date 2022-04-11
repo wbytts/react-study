@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class Demo extends React.Component {
-
   state = {
-    date: new Date()
+    date: new Date(),
   };
 
   componentDidMount() {

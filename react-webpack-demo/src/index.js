@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
 // import './001-基本用法.js'
 // import './002-基本JSX语法.js'
 // import './003-JSX的语法细节.js'
@@ -43,4 +42,4 @@ import ReactDOM from 'react-dom';
 // import './ubstated-001-hello'
 // import './unstated-next-001'
 
-import './demos/sidebar-01'
+import './demos/sidebar-01';
