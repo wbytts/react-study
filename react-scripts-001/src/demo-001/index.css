@@ -1,0 +1,67 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdfdf;
+  margin: 0;
+}
+
+.logs {
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #eae2b7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+  display: flex;
+  margin: 16px 0;
+  padding: 5px;
+  background-color: #fcbf49;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.date {
+  width: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  /* 子元素把父元素圆角盖住了，设置 overflow:hidden; 将超出的部分隐藏 */
+  overflow: hidden;
+}
+
+.month {
+  height: 25px;
+  line-height: 25px;
+  background-color: #d62828;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  color: #fff;
+}
+
+.day {
+  line-height: calc(80px - 25px);
+  font-size: 24px;
+}
+
+.content {
+  /* width: 100%; */
+  /* 设置自动伸缩（默认的增长为0） */
+  flex: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 16px;
+  color: #194b49;
+}
+
+.time {
+  color: #d62828;
+}
