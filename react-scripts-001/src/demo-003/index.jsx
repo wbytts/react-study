@@ -1,24 +1,28 @@
 import React, { useState, useEffect } from 'react';
 
 const App = props => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState({
+    num1: 0,
+    num2: 0
+  });
 
-  const handleClick = () => setCount(count + 1);
+  const handleClick = () => setCount(() => {
+    count.num1++;
+    count.num2--;
+    // 这里要返回一个新的对象，而不是返回 count
+    return {...count};
+  });
 
   return (
     <div>
       <button onClick={handleClick} style={{ padding: '10px' }}>
-        helo world # {count}
+        helo world # {JSON.stringify(count)}
       </button>
+      {/* <select multiple={true} value={['B', 'C']}></select> */}
     </div>
   );
 };
 
 export default App;
 
-// imrse --- React, useState, useEffect
-// impt  --- PropTypes
-// imrc --- React, Component
-// usf、uef --- 使用useState、使用 useEffect
-// ffc --- 函数式组件
-// sfc --- 函数式组件（箭头函数） （Stateless Function Component）
+

@@ -1,5 +1,5 @@
-﻿import React, { useState, useEffect, useRef, useMemo } from 'react';
-import ReactDOM, { createPortal } from 'react-dom';
+﻿import React, { createContext, useState, useEffect, useCallback, useReducer, useMemo, useRef, useContext } from 'react';
+import ReactDOM, { createRoot } from 'react-dom/client';
 import styled from 'styled-components';
 
 /*
@@ -9,12 +9,22 @@ useMemo 接收一个函数和依赖数组，当数组中依赖项变化的时候
     const sum = useMemo(() => {
         // 一系列计算
     }, [count])
-
-
 */
 
+const ctx = createContext({
+  name: '张三',
+  age: 18,
+});
+
 const App = props => {
-  return <div></div>;
+  const context = useContext(ctx);
+
+  return (
+    <div>
+      <div>{context.name}</div>
+      <div>{context.age}</div>
+    </div>
+  );
 };
 
 const mydiv = (
@@ -23,4 +33,5 @@ const mydiv = (
   </div>
 );
 
-ReactDOM.render(mydiv, document.querySelector('#app'));
+let root = ReactDOM.createRoot(document.getElementById('app'));
+root.render(mydiv);

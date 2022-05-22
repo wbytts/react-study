@@ -28,8 +28,14 @@ import ReactDOM from 'react-dom';
 // import './hook-002-切换'
 // import './hook-003-输入变化'
 // import './hook-004-useEffect'
+// import './hook-005-useRef'
+// import './hook-008-useContext'
+// import './hook-自定义-test-useAsync.js';
+// import './hook-自定义-test-useScroll.js';
 // import './ahooks-001-test'
 // import './ahooks-002-useRequest'
+// import './ahooks-useMouse.js'
+import './ahooks-useDrag.js'
 // import './flooks-01'
 // import './flooks-02'
 // import './flooks-03'
@@ -42,4 +48,4 @@ import ReactDOM from 'react-dom';
 // import './ubstated-001-hello'
 // import './unstated-next-001'
 
-import './demos/sidebar-01';
+// import './demos/sidebar-01';

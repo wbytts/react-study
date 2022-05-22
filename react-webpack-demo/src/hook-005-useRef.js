@@ -3,7 +3,7 @@ import ReactDOM, { createPortal } from 'react-dom';
 import styled from 'styled-components';
 
 /*
-useRef 是一个对象，它拥有一个 current 属性，并且不管函数组件执行多少次，而 useRef 返回的对象永远都是原来那一个。
+useRef返回 一个对象，它拥有一个 current 属性，并且不管函数组件执行多少次，而 useRef 返回的对象永远都是原来那一个
 
 useRef 有下面这几个特点：
   useRef 是一个只能用于函数组件的方法。
@@ -18,10 +18,18 @@ useRef vs createRef：
 */
 
 const App = props => {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  const xInput = useRef();
 
-  return <div></div>;
+  let handleClick = () => {
+    console.log(xInput.current.value);
+  };
+
+  return (
+    <div>
+      <input ref={xInput} />
+      <button onClick={handleClick}>按钮</button>
+    </div>
+  );
 };
 
 const mydiv = (
