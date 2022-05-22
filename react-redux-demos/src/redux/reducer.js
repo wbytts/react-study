@@ -9,9 +9,6 @@ const reducers = [
   countReducer,
 ]
 
-export default function reducer(state = initialState, action) {
-  let new State;
-}
 
 // 合并多个reducer
 const allReducer = combineReducers({
