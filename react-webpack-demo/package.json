@@ -10,7 +10,12 @@
     "dev": "npx webpack serve"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.6",
     "ahooks": "^3.1.9",
+    "antd": "^4.21.4",
     "axios": "^0.25.0",
     "bootstrap": "^3.4.1",
     "dayjs": "^1.10.7",
@@ -22,6 +27,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^7.2.6",
+    "reactstrap": "^9.1.1",
     "redux": "^4.1.2",
     "styled-components": "^5.3.3",
     "unstated": "^2.1.1",
