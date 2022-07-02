@@ -7,6 +7,7 @@ class Person extends React.Component {
   static propTypes = {
     name: PropTypes.string,
     age: PropTypes.number,
+    // 函数类型用  PropTypes.func
   };
 
   // 默认prop
@@ -28,6 +29,7 @@ class Person extends React.Component {
 /*
 React15版本的时候，React.PropTypes 还在维护，React16的时候，这个弃用了
 */
+//! 可以在 class 定义之后补充 propTypes 和 defaultProps，但是有些人不喜欢分开写
 // Person.propTypes = {
 //   name: PropTypes.string,
 //   age: PropTypes.number,

@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 function useInputValue(defaultValue = '') {
   const [value, setValue] = useState(defaultValue);
-  const change = useCallback(event => setValue(event.target.value), []);
-  const clear = useCallback(event => setValue(''), []);
+  const change = e => setValue(e.target.value);
+  const clear = e => setValue('');
   return { value, change, clear };
 }
 

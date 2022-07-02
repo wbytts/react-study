@@ -5,6 +5,8 @@ class BindEvent extends React.Component {
   constructor() {
     super();
     this.state = {};
+
+    // 构造器中的this就是这个类的实例对象
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -23,6 +25,7 @@ class BindEvent extends React.Component {
   handleClick() {
     // 作为 onClick 的回调，不是通过实例调用的，而是直接调用的
     // 又因为，类中定义的方法，默认在局部开启了严格模式，所以直接调用访问this为 undefined
+    // 如果没有开启严格模式（this应该是window）
     console.log(222, this);
   }
 

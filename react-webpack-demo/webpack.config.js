@@ -96,6 +96,7 @@ module.exports = {
     alias: {
       // 配置路径别名
       '@': path.join(__dirname, 'src'),
+      src: path.join(__dirname, 'src'),
     },
   },
 
@@ -110,7 +111,7 @@ module.exports = {
     // 服务端口
     port: 8181,
     // 是否自动打开浏览器
-    open: 'chrome',
+    // open: 'chrome',
     // 是否开启模块热切换，module上会挂一个 hot: true 的属性
     hot: true,
   },

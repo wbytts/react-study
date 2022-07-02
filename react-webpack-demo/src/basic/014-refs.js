@@ -12,7 +12,7 @@ class Demo extends React.Component {
     );
   }
   handleClick = () => {
-    console.log('提示数据~~~');
+    console.log('提示数据~~~', this.refs.input2.value);
     // 可以看到 refs 已经不推荐使用了
     this.refs.input1.value = 'Hello';
   };

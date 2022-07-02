@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { createContext, useState, useEffect, useCallback, useReducer, useMemo, useRef, useContext } from 'react';
 import ReactDOM from 'react-dom/client';
 
-function App() {
+const App = props => {
   return <div></div>;
-}
+};
 
-const mydiv = (
+const page = (
   <div>
     <App />
   </div>
@@ -13,4 +13,4 @@ const mydiv = (
 
 const containerDOM = document.querySelector('#app');
 const root = ReactDOM.createRoot(containerDOM);
-root.render(mydiv);
+root.render(page);
