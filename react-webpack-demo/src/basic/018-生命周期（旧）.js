@@ -30,7 +30,7 @@ class Demo extends React.Component {
 
       更新阶段：由 setState 触发
           shouldComponentUpdate
-          conponentWillUpdate
+          conponentWillUpdate （如果是 forceUpdate 触发的更新，则从这里开始）
           render
           componentDidUpdate
 
@@ -41,7 +41,7 @@ class Demo extends React.Component {
           render
           componentDidUpdate
 
-      卸载组件：由 ReactDOM.unmountComponentAtNode() 触发
+      卸载组件：由 ReactDOM.unmountComponentAtNode() 触发 
           componentWillUnmount：一般在这里做一些善后工作
 
   */

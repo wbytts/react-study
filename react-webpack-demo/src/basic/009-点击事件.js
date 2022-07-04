@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+/*
+React使用的是自定义事件（合成事件），而不是原生的DOM事件 --- 为了更好的兼容性
+React中的事件是通过事件委托的方式处理的（委托给组件最外层的元素）
+通过event.target得到发生事件的DOM元素对象
+*/
+
 class BindEvent extends React.Component {
   constructor() {
     super();

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class Demo extends React.Component {
   /*
       React.createRef 调用后可以返回一个容器，该容器可以存储被 ref 所标识的节点
-      该容器是专人专用的，一个只能绑定一个
+      该容器是专人专用的，一个容器只能绑定一个节点
   */
   myRef = createRef();
   // 保存数据
